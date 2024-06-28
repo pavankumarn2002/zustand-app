@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+// src/App.js
+import React from 'react';
+import EmployeeList from './components/EmployeeList';
+import AddEmployee from './components/AddEmployee';
+import UpdateEmployee from './components/UpdateEmployee';
+import "./App.css"
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Employee CRUD with Zustand and API</h1>
+      <AddEmployee />
+      <UpdateEmployee />
+      <EmployeeList />
     </div>
   );
-}
+};
 
 export default App;
